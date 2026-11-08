@@ -56,3 +56,14 @@ Todos têm: faixa de protótipo, `noindex`, selo "Aberto agora / Fechado agora" 
 2. Trocar as fotos de banco pelas do dono e confirmar preços, horários e domingo/segunda.
 3. Tirar a faixa de protótipo e o `noindex` (meta, `robots.txt` e `_headers`).
 4. Publicar: repositório no GitHub + Cloudflare Pages ligado ao Git, como nos outros sites (`barbearia-tz-<versao>-prototipo-xandedev.pages.dev`, um projeto por versão apontando para a pasta dela).
+
+## Rodada 3 (08/11/2026): o cliente escolheu o Clube
+
+- O dono gostou mais da versão `3-clube/`. Ajustes feitos só nela, ainda **não enviados** ao GitHub:
+  - Card "Cuidados": trocada a foto (aparecia um funcionário que não trabalha lá) por uma de cliente com toalha no rosto, sem ninguém identificável. Foto de banco: https://unsplash.com/photos/vu1KtfyVO1A (`_fotos-banco/toalha-cliente.jpg`). O `secador.jpg` saiu do Clube.
+  - Pix incluído nas formas de pagamento (dinheiro, Pix, crédito e débito).
+  - Comodidades: Wi-Fi, ar-condicionado e "fácil de estacionar por perto (sem estacionamento próprio)".
+  - Botão "Ver no Google Maps" aponta para a página do Google da barbearia: https://share.google/RdSmT7UBtuFVxTPrl
+  - Equipe: o texto diz que são três barbeiros, com o Arthur TZ como dono. "Com o TZ" passou a explicar que é o atendimento do Arthur TZ.
+- Respostas do Xande que mudaram as pendências: tem corte infantil (falta valor), tem assinatura (falta como funciona), a equipe é o Arthur TZ + dois barbeiros (falta nome). Perguntas para o dono em `PERGUNTAS-PARA-O-DONO.md`.
+- As versões 1 e 2 continuam no ar e no repositório como estavam.

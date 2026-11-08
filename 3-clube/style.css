@@ -171,3 +171,8 @@ details p{padding:0 2px 24px;color:#d6d0c1}
   .acoes .btn{flex:1 1 100%}
   .mapa iframe{height:280px}
 }
+
+/* comodidades */
+.como{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.como li{border:1px solid #5c4a14;padding:7px 14px;font-size:13.5px;letter-spacing:.04em;color:#d6d0c1}
+.como li::before{content:"";display:inline-block;width:6px;height:6px;background:var(--ouro);margin-right:9px;transform:rotate(45deg);vertical-align:1px}
