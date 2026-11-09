@@ -49,9 +49,11 @@
 <main id="inicio">
 
 <section class="hero" data-carrossel aria-label="Apresentação">
+  <div class="slides" data-par>
   <div class="slide ativo" style="background-image:url(img/cadeira-tijolo.jpg)"></div>
   <div class="slide" style="background-image:url(img/luminarias.jpg)"></div>
   <div class="slide" style="background-image:url(img/poltronas.jpg)"></div>
+  </div>
   <div class="hero-in">
     <p class="aberto" data-aberto><i></i><span class="txt">Horário</span></p>
     <h1>Barbearia TZ</h1>
@@ -72,10 +74,10 @@
 
 <section class="quem" id="quem-somos">
   <div class="quem-grid">
-    <figure class="quem-foto rv">
+    <figure class="quem-foto rv rv-esq">
       <img src="img/dupla.jpg" alt="Dois barbeiros da Barbearia TZ em frente à fachada da loja" width="1200" height="1200" loading="lazy">
     </figure>
-    <div class="quem-txt rv">
+    <div class="quem-txt rv rv-dir">
       <h2>Quem somos</h2>
       <span class="fio" aria-hidden="true"></span>
       <p>“Nosso propósito é gerar satisfação total quando o assunto é cabelo e barba. A ideia aqui é aumentar a autoestima do homem, mostrar novas opções e possibilidades para o seu estilo, tornando-o mais bonito, confiante e elegante.”</p>
@@ -144,7 +146,7 @@
 
 <section class="aval" aria-label="Avaliações">
   <div class="aval-in rv">
-    <p class="aval-n">5,0</p>
+    <p class="aval-n" data-conta="5,0">5,0</p>
     <div>
       <p class="estrelas" aria-label="5 estrelas">★★★★★</p>
       <p class="aval-t">Mais de 200 avaliações de 5 estrelas</p>
@@ -155,11 +157,11 @@
 
 <section class="unidade" id="unidade">
   <div class="un-grid">
-    <figure class="un-foto rv">
+    <figure class="un-foto rv rv-esq">
       <img src="img/luminarias.jpg" alt="Interior de barbearia com cadeiras alinhadas e luminárias no teto" loading="lazy">
       <figcaption>Imagem ilustrativa</figcaption>
     </figure>
-    <div class="un-txt rv">
+    <div class="un-txt rv rv-dir">
       <h2>Venha nos visitar</h2>
       <span class="fio" aria-hidden="true"></span>
       <address><b>Rua Minas Gerais, 9</b>Centro, São José da Lapa, MG<br>CEP 33350-000</address>
@@ -183,7 +185,7 @@
       </div>
     </div>
   </div>
-  <div class="mapa rv"><iframe title="Mapa da Barbearia TZ" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Rua%20Minas%20Gerais%209%20S%C3%A3o%20Jos%C3%A9%20da%20Lapa%20MG&amp;output=embed"></iframe></div>
+  <div class="mapa rv rv-zoom"><iframe title="Mapa da Barbearia TZ" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Rua%20Minas%20Gerais%209%20S%C3%A3o%20Jos%C3%A9%20da%20Lapa%20MG&amp;output=embed"></iframe></div>
 </section>
 
 <section class="duvidas" id="perguntas">

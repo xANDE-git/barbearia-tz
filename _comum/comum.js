@@ -94,9 +94,59 @@
       slides[i].classList.add('ativo'); if (pontos[i]) pontos[i].classList.add('ativo');
     }
     pontos.forEach(function (p, n) { p.addEventListener('click', function () { ir(n); parar(); }); });
-    function parar() { clearInterval(timer); }
+    function parar() { clearInterval(timer); var p = c.querySelector('.pontos'); if (p) p.classList.add('parado'); }
     var reduzC = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!reduzC) timer = setInterval(function () { ir(i + 1); }, 6000);
+  });
+
+  /* Dúvidas: abrir e fechar com altura animada (funciona em qualquer navegador) */
+  document.querySelectorAll('.faq details').forEach(function (d) {
+    var s = d.querySelector('summary'), anim = null;
+    d.classList.toggle('on', d.open);
+    s.addEventListener('click', function (e) {
+      e.preventDefault();
+      var abrir = !d.classList.contains('on');
+      if (reduz || !d.animate) { d.open = abrir; d.classList.toggle('on', abrir); return; }
+      var ini = d.offsetHeight;
+      if (anim) { anim.cancel(); anim = null; }
+      d.style.overflow = 'hidden';
+      var fim;
+      if (abrir) { d.open = true; d.classList.add('on'); fim = d.offsetHeight; }
+      else { d.classList.remove('on'); fim = s.offsetHeight + (d.offsetHeight - d.clientHeight); }
+      anim = d.animate({ height: [ini + 'px', fim + 'px'] }, { duration: 480, easing: 'cubic-bezier(.2,.7,.2,1)' });
+      anim.onfinish = function () { anim = null; d.style.overflow = ''; if (!abrir) d.open = false; };
+    });
+  });
+
+  /* Parallax leve no fundo do topo */
+  var par = document.querySelector('[data-par]');
+  if (par && !reduz) {
+    var tick = false;
+    window.addEventListener('scroll', function () {
+      if (tick) return; tick = true;
+      requestAnimationFrame(function () {
+        var y = Math.min(window.scrollY, window.innerHeight);
+        par.style.transform = 'translate3d(0,' + (y * 0.28).toFixed(1) + 'px,0)';
+        tick = false;
+      });
+    }, { passive: true });
+  }
+
+  /* Contagem da nota (5,0) ao aparecer */
+  document.querySelectorAll('[data-conta]').forEach(function (el) {
+    var alvo = parseFloat(el.getAttribute('data-conta').replace(',', '.'));
+    if (reduz || !('IntersectionObserver' in window)) return;
+    el.textContent = '0,0';
+    var o = new IntersectionObserver(function (es) {
+      if (!es[0].isIntersecting) return; o.disconnect();
+      var t0 = performance.now(), dur = 1600;
+      (function passo(t) {
+        var k = Math.min((t - t0) / dur, 1), v = alvo * (1 - Math.pow(1 - k, 3));
+        el.textContent = v.toFixed(1).replace('.', ',');
+        if (k < 1) requestAnimationFrame(passo);
+      })(t0);
+    }, { threshold: 0.6 });
+    o.observe(el);
   });
 
   var y = document.querySelector('[data-ano]');
