@@ -35,13 +35,14 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  /* Aberto agora (horário de Brasília, conforme o AppBarber) */
+  /* Aberto agora (horário de Brasília). */
   var HORARIO = {
-    2: [[480, 690], [780, 1200]],
-    3: [[480, 690], [780, 1200]],
-    4: [[480, 690], [780, 1200]],
-    5: [[480, 690], [780, 1200]],
-    6: [[480, 720], [780, 1200]]
+    1: [[480, 1140]],
+    2: [[480, 1140]],
+    3: [[480, 1140]],
+    4: [[480, 1140]],
+    5: [[420, 1140]],
+    6: [[420, 1140]]
   };
   function agora() {
     try {
