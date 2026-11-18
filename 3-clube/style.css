@@ -288,3 +288,5 @@ details.on>div{opacity:1;transform:none}
 .sobre-num b{display:block;font:600 clamp(2rem,4vw,2.8rem)/1 var(--serif);color:var(--ouro)}
 .sobre-num span{display:block;margin-top:6px;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--cz)}
 @media(max-width:900px){.sobre .quem-grid{grid-template-columns:1fr}.sobre .quem-foto{order:-1}}
+
+.xm-logo{display:flex;justify-content:center;width:fit-content;margin:0 auto;padding:14px 12px 4px;color:inherit;opacity:.32;transition:opacity .2s}.xm-logo:hover,.xm-logo:focus-visible{opacity:.85}
