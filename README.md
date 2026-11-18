@@ -55,7 +55,7 @@ Todos têm: faixa de protótipo, `noindex`, selo "Aberto agora / Fechado agora" 
 1. Escolher a versão e combinar com o dono.
 2. Trocar as fotos de banco pelas do dono e confirmar preços, horários e domingo/segunda.
 3. Tirar a faixa de protótipo e o `noindex` (meta, `robots.txt` e `_headers`).
-4. Publicar: repositório no GitHub + Cloudflare Pages ligado ao Git, como nos outros sites (`barbearia-tz-<versao>-prototipo-xandedev.pages.dev`, um projeto por versão apontando para a pasta dela).
+4. Publicar: repositório no GitHub + Cloudflare Pages ligado ao Git, como nos outros sites (`barbearia-tz-<versao>-prototipo-xandedev.pages.dev`, um projeto por versão apontando para a pasta dela). Endereço final: https://barbeariatz.com.br/.
 
 ## Rodada 3 (08/11/2026): o cliente escolheu o Clube
 
@@ -67,3 +67,7 @@ Todos têm: faixa de protótipo, `noindex`, selo "Aberto agora / Fechado agora" 
   - Equipe: o texto diz que são três barbeiros, com o Arthur TZ como dono. "Com o TZ" passou a explicar que é o atendimento do Arthur TZ.
 - Respostas do Xande que mudaram as pendências: tem corte infantil (falta valor), tem assinatura (falta como funciona), a equipe é o Arthur TZ + dois barbeiros (falta nome). Perguntas para o dono em `PERGUNTAS-PARA-O-DONO.md`.
 - As versões 1 e 2 continuam no ar e no repositório como estavam.
+
+## SEO da versão no ar (18/11/2026)
+
+A versão `3-clube/` é a que está em https://barbeariatz.com.br/. Nela foram removidos o `noindex` (meta, cabeçalho `X-Robots-Tag` e `Disallow` do `robots.txt`) e acrescentados canonical, `og:url`, imagem de compartilhamento com endereço completo, JSON-LD `HairSalon` (endereço, telefone, horário, pagamento, sem `aggregateRating`) e sitemap com o domínio real. As versões `1-tradicao/` e `2-raio/` continuam `noindex`, por serem só protótipos. O endereço `pages.dev` da Clube aponta o canonical para o domínio real.
