@@ -7,7 +7,7 @@
 
 :root{--p:#0a0a0a;--p2:#131313;--p3:#202020;--ouro:#f2b705;--ouro2:#ffd04a;--tx:#ece7db;--cz:#a9a498;--serif:"Cinzel",Georgia,serif;--sans:"Lato",system-ui,sans-serif;--max:1180px}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:80px;interpolate-size:allow-keywords}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:80px;interpolate-size:allow-keywords}
 body{background:var(--p);color:var(--tx);font:400 17px/1.7 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
