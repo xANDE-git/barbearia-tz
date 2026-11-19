@@ -295,3 +295,12 @@ details.on>div{opacity:1;transform:none}
 .aval-p{margin:0 0 20px;max-width:30em;font-size:15px;line-height:1.5;opacity:.8}
 .aval-acoes{display:flex;align-items:center;gap:14px 26px;flex-wrap:wrap}
 @media(max-width:700px){.aval-p{margin-inline:auto}.aval-acoes{flex-direction:column}.aval-acoes .btn{width:100%}}
+
+/* crédito do desenvolvedor: mesma linha do copyright, espelhado à direita, acima do botão do WhatsApp */
+.rodape{padding-bottom:96px}
+.rod-fim{display:flex;align-items:center;justify-content:space-between;gap:12px 24px;flex-wrap:wrap}
+.rod-fim p{margin:0;font-size:13px;color:#777}
+.rod-fim .xm-logo{flex-direction:row;align-items:center;gap:10px;margin:0;padding:0;opacity:.9;font-size:13px;color:#b2ad9f}
+.rod-fim .xm-logo svg{color:var(--ouro);flex:none}
+.rod-fim .xm-logo:hover,.rod-fim .xm-logo:focus-visible{opacity:1;color:var(--ouro)}
+@media(max-width:700px){.rod-fim{flex-direction:column;align-items:flex-start}}
