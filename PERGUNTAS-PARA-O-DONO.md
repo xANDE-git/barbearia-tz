@@ -4,7 +4,7 @@ Texto pronto para o Xande mandar no WhatsApp. Para cada pergunta, o dono respond
 
 ---
 
-Fala, [nome]! Tô ajeitando o site da barbearia (versão Clube, a que você gostou): https://barbearia-tz-clube-prototipo-xandedev.pages.dev
+Fala, [nome]! Tô ajeitando o site da barbearia (versão Clube, a que você gostou): https://barbeariatz.com.br/
 
 Pra deixar certinho, preciso confirmar umas coisas. Responde quando puder, pode ser por áudio:
 
