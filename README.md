@@ -55,7 +55,7 @@ Todos têm: faixa de protótipo, `noindex`, selo "Aberto agora / Fechado agora" 
 1. Escolher a versão e combinar com o dono.
 2. Trocar as fotos de banco pelas do dono e confirmar preços, horários e domingo/segunda.
 3. Tirar a faixa de protótipo e o `noindex` (meta, `robots.txt` e `_headers`).
-4. Publicar: repositório no GitHub + Cloudflare Pages ligado ao Git, como nos outros sites (`barbearia-tz-<versao>-prototipo-xandedev.pages.dev`, um projeto por versão apontando para a pasta dela). Endereço final: https://barbeariatz.com.br/.
+4. Publicar: repositório no GitHub + Cloudflare Pages ligado ao Git, como nos outros sites (`barbearia-tz-<versao>-prototipo-xandemartinsc.pages.dev`, um projeto por versão apontando para a pasta dela). Endereço final: https://barbeariatz.com.br/.
 
 ## Rodada 3 (08/11/2026): o cliente escolheu o Clube
 
