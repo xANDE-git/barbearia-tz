@@ -71,3 +71,5 @@ Todos têm: faixa de protótipo, `noindex`, selo "Aberto agora / Fechado agora" 
 ## SEO da versão no ar (18/11/2026)
 
 A versão `3-clube/` é a que está em https://barbeariatz.com.br/. Nela foram removidos o `noindex` (meta, cabeçalho `X-Robots-Tag` e `Disallow` do `robots.txt`) e acrescentados canonical, `og:url`, imagem de compartilhamento com endereço completo, JSON-LD `HairSalon` (endereço, telefone, horário, pagamento, sem `aggregateRating`) e sitemap com o domínio real. As versões `1-tradicao/` e `2-raio/` continuam `noindex`, por serem só protótipos. O endereço `pages.dev` da Clube aponta o canonical para o domínio real.
+
+Otimização de imagens e dados estruturados (18/11/2026, ainda sem publicar): fotos da `3-clube/img/` convertidas para WebP (topo em 1400 px; peso total das imagens de 2,4 MB para 1,3 MB; os JPG originais continuam na pasta), JSON-LD ampliado com serviços/preços (iguais aos da página), equipe e ação de agendamento, JSON-LD de perguntas frequentes, e o carrossel deixou de usar `role="tablist"` (acessibilidade 95 para 100).
